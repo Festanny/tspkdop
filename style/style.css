@@ -418,15 +418,31 @@ section.gray .h span {
 }
 
 .about .about-block,
-.info .info-block {
+.info .info-block,
+.teachers .info-block {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 58px;
+}
+
+.about .about-block,
+.teachers .info-block {
+	margin-top: 60px;
+}
+
+.info .info-block {
+	margin-top: 100px;
 }
 
 .about .about-block .block,
 .info .info-block .block {
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 25%;
+}
+
+.teachers .info-block .block {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -491,7 +507,49 @@ section.gray .h span {
 	height: 90%;
 	left: -25%;
 	background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(221,170,210,0.58) 50%, rgba(255,255,255,0) 100%);
+}
 
+.teachers .info-block .block {
+	margin-bottom: 50px;
+}
+
+.teachers .info-block .block .img {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	border-radius: 50px;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+.teachers .info-block .block .img img {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	object-fit: cover;
+}
+
+.teachers .info-block .block span:nth-of-type(1) {
+	margin: 0 auto;
+	margin-top: 16px;
+	font-weight: 400;
+	color: #838383;
+	font-size: 18px;
+	width: 270px;
+}
+
+.teachers .info-block .block span:nth-of-type(2) {
+	margin: 0 auto;
+	margin-top: 18px;
+	font-weight: 300;
+	font-size: 12px;
+	width: 270px;
+}
+
+.teachers .info-block .block span:nth-of-type(1) div:nth-of-type(1) {
+	text-transform: uppercase;
+	color: #6F6F6F;
+	font-size: 25px;
 }
 
 
