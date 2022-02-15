@@ -752,19 +752,16 @@ section.gray .howstudy .info-block .block {
 }
 
 section.white .reviews .info-block {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	row-gap: 25px;
-	column-gap: 50px;
+	flex-wrap: wrap;
 }
 
 section.white .reviews .info-block .block {
-	width: 100%;
+	width: 48%;
 	text-align: left;
 	padding: 32px;
 	border: 1px solid #DFDFDF;
 	border-radius: 5px;
+	margin-bottom: 25px;
 }
 
 section.white .reviews .info-block .block .info-name {
