@@ -35,7 +35,7 @@
                     <a href="#"><img src="image/social/tw.png" alt=""></a>
                 </div>
                 <div class="auth">
-                    <div><a href="#">Регистрация</a> / <a href="#">Вход</a></div>
+                    <div><span data-bs-toggle="modal" data-bs-target="#reg">Регистрация</span> / <span>Вход</span></div>
                 </div>
             </div>
         </nav>
@@ -97,7 +97,7 @@
                     <div>Продолжительность:<b>45 ч.</b></div>
                     <div>Стоимость:<b>25 000 р.</b></div>
                     <div>Старт:<b>27.01.2022</b></div>
-                    <div class="btn-m">Записаться</div>
+                    <div class="btn-m" data-bs-toggle="modal" data-bs-target="#reg">Записаться</div>
                 </div>
             </div>
         </section>
@@ -546,6 +546,42 @@
 			</nav>
 		</div>
 	</footer>
+
+	<div class="modal fade" id="reg" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				<div class="desc">
+					<img src="image/modal/courseWeb.svg" alt="">
+					<div class="college">
+						<span>Тольяттинский</span>
+						<span>социально-</span>
+						<span>педагогический</span>
+						<div class="college-text">
+							<span>колледж</span>
+						</div>
+					</div>
+				</div>
+				<div class="form">
+					<h1>Запись на курс</h1>
+					<form action="">
+						<div class="main">
+							<div><input type="text" name="name" placeholder="Введите Ваше имя"></div>
+							<div><input type="email" name="email" placeholder="Введите Вашу электронную почту (email)"></div>
+							<div><input type="phone" name="phone" placeholder="Введите Ваш телефон"></div>
+						</div>
+						<div class="block-check">
+							<input type="checkbox" id="check" name="check">
+							<label for="check">Согласие на обработку персональных данных</label>
+						</div>
+						<div class="btn-new">
+							<input type="submit" value="Записаться">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
