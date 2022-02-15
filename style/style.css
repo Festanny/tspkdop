@@ -416,15 +416,16 @@ section.white .info-block,
 section.gray .info-block {
     display: flex;
     justify-content: space-between;
+	margin-top: 80px;
 }
 
-section.gray .info-block {
+/* section.gray .info-block {
     margin-top: 60px;
 }
 
 section.white .info-block {
     margin-top: 100px;
-}
+} */
 
 section.white .info-block .block,
 section.gray .info-block .block {
@@ -750,4 +751,33 @@ section.gray .howstudy .info-block .block {
 	transform: translateX(50%);
 }
 
+section.white .reviews .info-block {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	row-gap: 25px;
+	column-gap: 50px;
+}
+
+section.white .reviews .info-block .block {
+	width: 100%;
+	text-align: left;
+	padding: 32px;
+	border: 1px solid #DFDFDF;
+	border-radius: 5px;
+}
+
+section.white .reviews .info-block .block .info-name {
+	margin-bottom: 20px;
+}
+
+section.white .reviews .info-block .block .info-name span:nth-of-type(1) {
+	color: #58607C;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+section.white .reviews .info-block .block .info-name span:nth-of-type(2) {
+	color: #C1C1C1;
+}
 
