@@ -764,17 +764,16 @@ section.white .reviews .info-block .block {
 	margin-bottom: 25px;
 }
 
-section.white .reviews .info-block .block .info-name {
+.reviews .info-block .block .info-name {
 	margin-bottom: 20px;
 }
-
-section.white .reviews .info-block .block .info-name span:nth-of-type(1) {
+.reviews .info-block .block .info-name span:nth-of-type(1) {
 	color: #58607C;
 	font-weight: bold;
 	margin-right: 10px;
 }
 
-section.white .reviews .info-block .block .info-name span:nth-of-type(2) {
+.reviews .info-block .block .info-name span:nth-of-type(2) {
 	color: #C1C1C1;
 }
 
@@ -808,4 +807,27 @@ section.white .certificate .info-block {
 	text-transform: uppercase;
 }
 
+section.gray .questions .info-block {
+	flex-wrap: wrap;
+}
 
+section.gray .questions .info-block .block {
+	width: 48%;
+	text-align: left;
+	padding: 32px;
+	border: 1px solid #DFDFDF;
+	border-radius: 5px;
+	margin-bottom: 25px;
+	font-weight: 500;
+}
+
+.questions .info-block .block .question-text {
+	font-size: 20px;
+	text-transform: uppercase;
+	padding-bottom: 16px;
+	border-bottom: 2px solid #DFDFDF;
+}
+
+.questions .info-block .block .text {
+	margin-top: 16px;
+}
