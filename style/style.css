@@ -609,3 +609,145 @@ section.gray .info-block .block {
     margin-top: 10px;
     margin-bottom: 0;
 }
+
+section.gray .howstudy .info-block .block {
+	width: 15%;
+}
+
+.howstudy .info-block .block {
+	position: relative;
+}
+
+.howstudy .info-block .block .info .text {
+	display: flex;
+	flex-direction: column;
+}
+
+.howstudy .info-block .block .info .text .img {
+	margin-bottom: 28px;
+	height: 77px;
+}
+
+.howstudy .info-block .block .info .text .img img {
+	height: 100%;
+}
+
+.howstudy .info-block .block .info .text span {
+	font-weight: 300;
+}
+
+.howstudy .info-block .block .info .text .text-weight {
+	width: 150px;
+	margin: 0 auto;
+	margin-bottom: 77px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.howstudy .info-block .block:nth-child(2n) .info .text span {
+	order: 1;
+	margin-bottom: 28px;
+}
+.howstudy .info-block .block:nth-child(2n) .info .text .img {
+	order: 2;
+	margin-bottom: 0;
+}
+.howstudy .info-block .block:nth-child(2n) .info .text .text-weight {
+	position: relative;
+	order: 3;
+	margin-top: 77px;
+	margin-bottom: 0;
+}
+
+.howstudy .info-block .block:nth-of-type(2)::before,
+.howstudy .info-block .block:nth-of-type(3)::before,
+.howstudy .info-block .block:nth-of-type(4)::before,
+.howstudy .info-block .block:nth-of-type(5)::before {
+	content: '';
+	position: absolute;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.howstudy .info-block .block:nth-of-type(2)::before {
+	top: 11%;
+	left: -62%;
+	background-image: url("../image/howstudy/line1.svg");
+	width: 217px;
+	height: 220px;
+}
+.howstudy .info-block .block:nth-of-type(3)::before {
+	top: 28%;
+	left: -69%;
+	background-image: url("../image/howstudy/line2.svg");
+	width: 218px;
+	height: 143px;
+}
+.howstudy .info-block .block:nth-of-type(4)::before {
+	top: 11%;
+	left: -62%;
+	background-image: url("../image/howstudy/line3.svg");
+	width: 207px;
+	height: 190px;
+}
+.howstudy .info-block .block:nth-of-type(5)::before {
+	top: 20%;
+	left: -69%;
+	background-image: url("../image/howstudy/line4.svg");
+	width: 257px;
+	height: 163px;
+}
+
+.howstudy .info-block .block .info .text .text-weight::before,
+.howstudy .info-block .block .info .text .text-weight::before {
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 65px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.howstudy .info-block .block .info .text .text-weight::before {
+	background-image: url("../image/howstudy/line5.svg");
+	top: 55px;
+}
+
+.howstudy .info-block .block:nth-of-type(2n) .info .text .text-weight::before {
+	background-image: url("../image/howstudy/line6.svg");
+	top: -75px;
+}
+
+.howstudy .info-block .block:first-of-type::after {
+	content: '';
+	position: absolute;
+	width: 115px;
+	height: 130px;
+	background-image: url("../image/howstudy/image6.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	top: 15px;
+	left: 25px;
+	transform: translateX(-50%);
+}
+
+.howstudy .info-block .block:last-of-type::after {
+	content: '';
+	position: absolute;
+	width: 115px;
+	height: 130px;
+	background-image: url("../image/howstudy/image7.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	top: 15px;
+	right: 35px;
+	transform: translateX(50%);
+}
+
+
