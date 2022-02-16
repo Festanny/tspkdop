@@ -287,7 +287,8 @@ section .web {
 }
 
 .web .text-info-b .hashtag {
-    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
     max-width: 100%;
 }
 
@@ -297,6 +298,7 @@ section .web {
     background: #BF83D3;
     border-radius: 50px;
     margin-right: 5px;
+    margin-top: 10px;
 }
 
 .web .text-info-b .hashtag span:last-of-type {
