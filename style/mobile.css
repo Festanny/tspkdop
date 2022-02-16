@@ -86,16 +86,19 @@
 }
 
 @media screen and (max-width: 1440px) {
-    .container {
+    .container,
+    header .header .container {
         width: 1227px;
     }
     header nav .nav {
         font-size: 14px;
     }
-    header .logo-college .text .college span:nth-of-type(1) {
+    header .logo-college .text .college span:nth-of-type(1),
+    footer .college span:nth-of-type(1) {
         font-size: 20px;
     }
-    header .logo-college .text .college span:nth-of-type(2) {
+    header .logo-college .text .college span:nth-of-type(2),
+    footer .college span:nth-of-type(2) {
         font-size: 40px;
     }
     header .logo-college .text .college .all span:nth-of-type(3) {
@@ -125,7 +128,9 @@
     }
     header .header-main .logo-college::before {
         display: block;
-        top: -5px;
+        top: 5px;
+        width: 190px;
+        height: 190px;
     }
     .web .text-info-b>span {
         font-size: 36px;
@@ -139,5 +144,40 @@
     }
     .howstudy .info-block .block:nth-of-type(2)::before {
         left: -70%;
+    }
+    header .header-main .line1, header .header-main .line2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1325px) {
+    header .header::before {
+        display: none;
+    }
+    header .header-main .logo-college .logo {
+        border: 1px dashed #8C9ABC;
+    }
+    header .header-main .logo-college .logo .inside {
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .container, header .header .container {
+        width: 1100px;
+    }
+    header .header-main .logo-college::before {
+        display: block;
+        top: 45px;
+        width: 130px;
+        height: 130px;
+        right: -130px;
+    }
+    .about .info-block .block:nth-of-type(2)::before, .about .info-block .block:nth-of-type(3)::before {
+        top: 50px;
+        height: 60%;
+    }
+    section.white .about-course .info-block .block {
+        width: 30%;
     }
 }
