@@ -288,6 +288,7 @@ section .web {
 
 .web .text-info-b .hashtag {
     margin-top: 10px;
+    max-width: 100%;
 }
 
 .web .text-info-b .hashtag span {
@@ -782,16 +783,29 @@ section.white .reviews .info-block .block {
 	color: #C1C1C1;
 }
 
+section.white .certificate .info-block .block {
+    width: auto;
+    margin-right: 105px;
+}
+
+section.white .certificate .info-block .block:last-of-type {
+    margin-right: 0;
+}
+
 section.white .certificate .info-block {
 	justify-content: center;
 }
 
 .certificate .info-block .img {
 	height: 232px;
+    display: flex;
+    justify-content: center;
 }
 
 .certificate .info-block .img img {
 	height: 100%;
+    max-width: 100%;
+    object-fit: cover;
 }
 
 .certificate .info-block .block span {
