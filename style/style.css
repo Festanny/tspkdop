@@ -562,16 +562,19 @@ section.gray .info-block .block {
 
 .about-course .info-block .block .info {
     text-align: left;
+    max-height: 325px;
+    overflow-y: auto;
 }
 
 .about-course .info-block .block .name {
     color: #58607C;
     font-size: 20px;
     font-weight: 500;
+    margin-bottom: 16px;
 }
 
 .about-course .info-block .block .info .description {
-    margin-top: 16px;
+    padding: 5px 5px 0 0;
 }
 
 .about-course .info-block .block .info .description span {
