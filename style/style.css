@@ -25,6 +25,7 @@ header nav {
     background-color: #fff;
     width: 100%;
     font-size: 16px;
+    z-index: 10;
 }
 
 header nav .nav {
@@ -355,7 +356,10 @@ section .web {
     right: -7px;
 }
 
-.web .dop div::before {
+.web .dop div:nth-of-type(1)::before,
+.web .dop div:nth-of-type(2)::before,
+.web .dop div:nth-of-type(3)::before,
+.web .dop div:nth-of-type(4)::before {
     position: absolute;
     content: '';
     width: 24px;
@@ -721,15 +725,15 @@ section.gray .howstudy .info-block .block {
 	background-size: contain;
 	left: 50%;
 	transform: translateX(-50%);
+    background-image: url("../image/howstudy/line5.svg");
 }
 
 .howstudy .info-block .block .info .text .text-weight::before {
-	background-image: url("../image/howstudy/line5.svg");
 	top: 55px;
 }
 
 .howstudy .info-block .block:nth-of-type(2n) .info .text .text-weight::before {
-	background-image: url("../image/howstudy/line6.svg");
+    transform: rotate(180deg) translateX(50%);
 	top: -75px;
 }
 
@@ -965,6 +969,9 @@ footer nav .menu a:last-of-type {
 }
 
 .modal .modal-dialog .modal-content .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 	position: relative;
 	padding: 50px 20px 40px 20px;
 	background-color: #58607C;

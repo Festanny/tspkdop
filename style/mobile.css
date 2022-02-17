@@ -162,7 +162,7 @@
     }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1302px) {
     .container, header .header .container {
         width: 1100px;
     }
@@ -189,7 +189,7 @@
     }
 }
 
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 1205px) {
     .container, header .header .container {
         width: 1000px;
     }
@@ -238,9 +238,6 @@
     .howstudy .info-block .block:last-of-type::after {
         right: -15px;
     }
-    .certificate .info-block .img {
-        /* height: 222px; */
-    }
     .howstudy .info-block .block:nth-of-type(2)::before, .howstudy .info-block .block:nth-of-type(3)::before, .howstudy .info-block .block:nth-of-type(4)::before, .howstudy .info-block .block:nth-of-type(5)::before {
         width: 120px;
     }
@@ -253,9 +250,16 @@
     .howstudy .info-block .block:nth-of-type(5)::before {
         left: -55%;
     }
+    footer .footer {
+        flex-wrap: wrap;
+    }
+    footer .footer .college {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1125px) {
     .container, header .header .container {
         width: 900px;
     }
@@ -270,7 +274,8 @@
     .web .text-info-b .text-dop, .web .dop div,
     .about-course .info-block .block .info,
     .howstudy .info-block .block .info .text span,
-    .questions .info-block .block .text {
+    .questions .info-block .block .text,
+    .info .info-block .block span:nth-of-type(2) {
         font-size: 15px;
     }
     .h span {
@@ -300,7 +305,7 @@
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1025px) {
     .container, header .header .container {
         width: 800px;
     }
@@ -336,4 +341,167 @@
     section.white .certificate .info-block .block {
         margin-right: 10px;
     }
+    .teachers .info-block .block span:nth-of-type(2),
+    .teachers .info-block .block span:nth-of-type(1) {
+        width: auto;
+    }
 }
+
+@media screen and (max-width: 925px) {
+    .container, header .header .container {
+        width: 700px;
+    }
+    section .web {
+        flex-wrap: wrap;
+    }
+    .web .text,
+    .web .dop {
+        width: 100%;
+    }
+    .web .text {
+        padding-right: 0;
+        border: 0;
+        margin-bottom: 20px;
+    }
+    header .logo-college .text .college .all span:nth-of-type(3) {
+        display: none;
+    }
+    header .logo-college .text .college .all span:nth-of-type(2) {
+        margin-right: 0;
+        padding-right: 0;
+        border: 0;
+    }
+    header nav .nav {
+        flex-wrap: wrap;
+    }
+    header .nav .menu {
+        order: 1;
+        margin-bottom: 15px;
+    }
+    header .nav .social {
+        order: 3;
+    }
+    header .nav .auth {
+        order: 2;
+        margin-bottom: 15px;
+    }
+    .web .text .img {
+        width: 170px;
+        height: 170px;
+    }
+    .web .text-info-b>span,
+    .h span {
+        font-size: 32px;
+    }
+    .about .info-block .block:nth-of-type(2)::before, .about .info-block .block:nth-of-type(3)::before {
+        display: none;
+    }
+    .info .info-block .block img {
+        height: 130px;
+    }
+    .info .info-block .block span:nth-of-type(1) {
+        font-size: 22px;
+    }
+    .teachers .info-block .block .img {
+        width: 150px;
+        height: 150px;
+    }
+    .teachers .info-block .block span:nth-of-type(1) div:nth-of-type(1) {
+        font-size: 22px;
+    }
+    .teachers .info-block .block span:nth-of-type(1) {
+        font-size: 16px;
+    }
+    .howstudy .info-block .block:first-of-type::after,
+    .howstudy .info-block .block:last-of-type::after {
+        display: none;
+    }
+    section.gray .howstudy .info-block {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    section.gray .howstudy .info-block .block {
+        position: relative;
+        width: 40%;
+        margin-bottom: 30px;
+    }
+
+    .howstudy .info-block .block::before {
+        position: absolute;
+        color: rgba(111, 111, 111, 0.08);
+        font-weight: 900;
+        font-size: 150px;
+        left: 15%!important;
+    }
+
+    .howstudy .info-block .block:nth-of-type(1)::before {
+        content: '1';
+        background-image: none;
+        top: 0;
+        width: auto;
+        height: auto;
+    }
+    .howstudy .info-block .block:nth-of-type(2)::before {
+        content: '2';
+        background-image: none;
+        top: 0;
+        width: auto;
+        height: auto;
+    }
+    .howstudy .info-block .block:nth-of-type(3)::before {
+        content: '3';
+        background-image: none;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: auto;
+    }
+    .howstudy .info-block .block:nth-of-type(4)::before {
+        content: '4';
+        background-image: none;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: auto;
+    }
+    .howstudy .info-block .block:nth-of-type(5)::before {
+        content: '5';
+        background-image: none;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: auto;
+    }
+    .howstudy .info-block .block .info .text .text-weight::before {
+        top: 30px;
+    }
+    .howstudy .info-block .block:nth-child(2n) .info .text span {
+        order: 3;
+        margin-bottom: 0;
+        margin-top: 28px;
+    }
+    .howstudy .info-block .block:nth-child(2n) .info .text .img {
+        order: 2;
+    }
+    .howstudy .info-block .block:nth-child(2n) .info .text .text-weight {
+        order: 1;
+        margin-bottom: 77px;
+        margin-top: 0;
+    }
+    .howstudy .info-block .block:nth-of-type(2n) .info .text .text-weight::before {
+        top: 30px;
+        transform: rotate(0deg) translateX(-50%);
+    }
+    .howstudy .info-block .block .info .text .img img {
+        position: relative;
+    }
+    .modal .modal-dialog .modal-content .form h1 {
+        font-size: 24px;
+    }
+    .modal .modal-dialog .modal-content .desc .college span:nth-of-type(2), .modal .modal-dialog .modal-content .desc .college span:nth-of-type(3) {
+        font-size: 26px;
+    }
+}
+
+
+
