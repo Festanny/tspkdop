@@ -257,6 +257,10 @@
         width: 100%;
         margin-bottom: 20px;
     }
+    footer .footer nav {
+        width: 100%;
+        text-align: left;
+    }
 }
 
 @media screen and (max-width: 1125px) {
@@ -323,7 +327,7 @@
     section.white .about-course .info-block .block, section.gray .about-course .info-block .block,
     section.white .certificate .info-block .block {
         width: 48%;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
     }
     .howstudy .info-block .block .info .text .text-weight {
         width: 100%;
@@ -429,7 +433,7 @@
     section.gray .howstudy .info-block .block {
         position: relative;
         width: 40%;
-        margin-bottom: 30px;
+        margin-bottom: 25px;
     }
 
     .howstudy .info-block .block::before {
@@ -598,9 +602,55 @@
     }
 }
 
+@media screen and (max-width: 616px) {
+    header .nav .social {
+        display: none;
+    }
+    header nav .nav {
+        padding: 0;
+    }
+    header .nav .menu,
+    header .nav .auth {
+        margin-bottom: 0;
+        padding: 15px 0;
+    }
+    footer nav .menu {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    footer .social {
+        display: flex;
+    }
+}
+
 @media screen and (max-width: 572px) {
     .web .text-info-b>span, .h span {
         font-size: 30px;
+    }
+    .teachers .info-block .block span:nth-of-type(2) {
+        width: 95%;
+    }
+    section.white .info-block .block, section.gray .info-block .block {
+        width: 48%;
+        margin-bottom: 25px;
+    }
+    .h span {
+        max-width: 100%;
+        padding: 0;
+    }
+    .h span::before,
+    .h span::after {
+        bottom: -10px;
+        top: auto;
+        width: 100px;
+    }
+    .h span::before {
+        left: 50%;
+        transform: translateX(-100%);
+    }
+    .h span::after {
+        right: 50%;
+        transform: translateX(100%);
     }
 }
 

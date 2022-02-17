@@ -37,6 +37,10 @@ header nav .nav {
     color: #7E7E7E;
 }
 
+header .nav .menu {
+    margin-right: 10px;
+}
+
 header .nav .menu a {
     padding: 0 10px;
     border-right: 1px solid #6F6F6F;
@@ -51,17 +55,24 @@ header .nav .menu a:last-of-type {
     border: 0;
 }
 
-header .nav .social a {
+footer .social {
+    display: none;
+}
+
+header .nav .social a,
+footer .social a {
     margin-right: 11px;
     width: 29px;
     height: 29px;
 }
 
-header .nav .social a img {
+header .nav .social a img,
+footer .social a img {
     object-fit: cover;
 }
 
-header .nav .social a:last-of-type {
+header .nav .social a:last-of-type,
+footer .social a:last-of-type {
     margin-right: 0;
 }
 
