@@ -525,8 +525,7 @@ section.gray .info-block .block {
 }
 
 .teachers .info-block .block .img img {
-    width: 200px;
-    height: 200px;
+    width: 100%;
     margin: 0 auto;
     object-fit: cover;
 }
@@ -868,9 +867,14 @@ footer .footer {
 	padding: 20px 0;
 }
 
+footer .footer nav {
+    text-align: right;
+}
+
 footer .footer .college {
 	display: flex;
 	flex-direction: column;
+    margin-right: 20px;
 }
 
 footer .college span:nth-of-type(1) {
