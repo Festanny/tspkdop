@@ -239,7 +239,7 @@
         right: -15px;
     }
     .certificate .info-block .img {
-        height: 222px;
+        /* height: 222px; */
     }
     .howstudy .info-block .block:nth-of-type(2)::before, .howstudy .info-block .block:nth-of-type(3)::before, .howstudy .info-block .block:nth-of-type(4)::before, .howstudy .info-block .block:nth-of-type(5)::before {
         width: 120px;
@@ -293,7 +293,7 @@
         height: 180px;
     }
     .certificate .info-block .img {
-        height: 210px;
+        /* height: 210px; */
     }
     .certificate .info-block .block span {
         font-size: 17px;
@@ -309,5 +309,31 @@
     }
     .about .info-block .block:nth-of-type(2)::before, .about .info-block .block:nth-of-type(3)::before {
         height: 35%;
+    }
+    .about .info-block .block:nth-of-type(2)::before, .about .info-block .block:nth-of-type(3)::before {
+        left: -78%;
+    }
+    section.white .about-course .info-block .block, section.gray .about-course .info-block .block,
+    section.white .certificate .info-block .block {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+    .howstudy .info-block .block .info .text .text-weight {
+        width: 100%;
+    }
+    .about .info-block .block span:nth-of-type(1), .about-course .info-block .block .name, .howstudy .info-block .block .info .text .text-weight, .questions .info-block .block .question-text {
+        font-size: 18px;
+    }
+    .howstudy .info-block .block .info .text .img {
+        height: 70px;
+    }
+    .howstudy .info-block .block:nth-of-type(2)::before, .howstudy .info-block .block:nth-of-type(3)::before, .howstudy .info-block .block:nth-of-type(4)::before, .howstudy .info-block .block:nth-of-type(5)::before {
+        width: 100px;
+    }
+    section.white .certificate .info-block {
+        justify-content: space-between;
+    }
+    section.white .certificate .info-block .block {
+        margin-right: 10px;
     }
 }

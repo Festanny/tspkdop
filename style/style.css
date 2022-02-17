@@ -788,7 +788,6 @@ section.white .reviews .info-block .block {
 }
 
 section.white .certificate .info-block .block {
-    width: auto;
     margin-right: 105px;
 }
 
@@ -801,15 +800,17 @@ section.white .certificate .info-block {
 }
 
 .certificate .info-block .img {
-	height: 232px;
+	/* height: 232px; */
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
 }
 
 .certificate .info-block .img img {
-	height: 100%;
-    max-width: 100%;
-    object-fit: cover;
+	height: auto;
+    width: 100%;
+    /* object-fit: cover; */
 }
 
 .certificate .info-block .block span {
