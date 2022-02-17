@@ -508,11 +508,17 @@
         font-size: 26px;
     }
     .web .dop {
-        padding-right: 64px;
+        padding-right: 34px;
     }
     .web .dop .btn-m {
         margin: 26px auto 0;
         max-width: 60%;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .modal-dialog {
+        max-width: 770px;
     }
 }
 
@@ -557,11 +563,44 @@
     header .header-main .dop {
         margin-top: 5px;
     }
+    .modal-dialog {
+        max-width: 670px;
+    }
 }
 
 @media screen and (max-width: 700px) {
     .info .info-block .block:nth-of-type(2)::before, .info .info-block .block:nth-of-type(3)::before {
         display: none;
+    }
+    .modal-dialog {
+        max-width: 600px;
+    }
+    .modal .modal-dialog .modal-content .desc {
+        width: 40%;
+    }
+    .modal .modal-dialog .modal-content .form {
+        padding: 30px;
+    }
+    .modal .modal-dialog .modal-content .desc {
+        padding: 30px;
+    }
+    .modal .modal-dialog .modal-content .desc .college span:nth-of-type(2), .modal .modal-dialog .modal-content .desc .college span:nth-of-type(3) {
+        font-size: 16px;
+    }
+    .modal .modal-dialog .modal-content .desc .college .college-text span {
+        font-size: 14px;
+    }
+    .modal .modal-dialog .modal-content .form form .btn-new {
+        text-align: center;
+    }
+    .h span {
+        max-width: 55%;
+    }
+}
+
+@media screen and (max-width: 572px) {
+    .web .text-info-b>span, .h span {
+        font-size: 30px;
     }
 }
 

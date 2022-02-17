@@ -120,6 +120,10 @@ header .header-main .logo-college {
     align-items: center;
 }
 
+header .header-main .logo-college .text {
+    flex: 1;
+}
+
 header .header-main .logo-college::before {
     content: '';
     position: absolute;
@@ -1061,7 +1065,7 @@ footer nav .menu a:last-of-type {
 	outline: 0;
 	border: none;
 	border-bottom: 1px solid #E7E7E7;
-	padding: 10px 35px;
+	padding: 10px 10px 10px 35px;
 	font-size: 15px;
 	font-weight: 300;
 	color: #747474;
