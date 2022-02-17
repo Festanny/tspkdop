@@ -187,6 +187,9 @@
     .howstudy .info-block .block:last-of-type::after {
         right: 0;
     }
+    section.gray .about {
+        padding-bottom: 0;
+    }
 }
 
 @media screen and (max-width: 1205px) {
@@ -512,7 +515,7 @@
         font-size: 26px;
     }
     .web .dop {
-        padding-right: 34px;
+        padding-right: 64px;
     }
     .web .dop .btn-m {
         margin: 26px auto 0;
@@ -636,7 +639,6 @@
     }
     .h span {
         max-width: 100%;
-        padding: 0;
     }
     .h span::before,
     .h span::after {
@@ -654,4 +656,140 @@
     }
 }
 
+@media screen and (max-width: 540px) {
+    .modal .modal-dialog .modal-content .desc {
+        display: none;
+    }
+    .about-course .info-block .block {
+        padding: 20px;
+    }
+    section.white .info-block, section.gray .info-block {
+        margin-top: 70px;
+    }
+    .howstudy .info-block .block::before {
+        font-size: 130px;
+        top: 10px!important;
+    }
+    section.white .info-block .block, section.gray .info-block .block, section.white .about-course .info-block .block, section.gray .about-course .info-block .block, section.white .certificate .info-block .block {
+        width: 49%;
+    }
+    section.gray .howstudy .info-block .block {
+        width: 42%;
+    }
+    section.white,
+    section.gray {
+        padding: 60px 0;
+    }
+    header .logo-college .text .college span:nth-of-type(2), footer .college span:nth-of-type(2) {
+        font-size: 35px;
+    }
+    header .logo-college .text .college .all span:nth-of-type(1) {
+        font-size: 17px;
+    }
+    header .logo-college .text .college .all span:nth-of-type(3) {
+        font-size: 19px;
+    }
+    .info .info-block .block span:nth-of-type(1) {
+        font-size: 20px;
+    }
+    .info .info-block .block span:nth-of-type(2) {
+        margin-top: 15px;
+    }
+    section.white .certificate .info-block {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    header .logo-college .text .college span:nth-of-type(2), footer .college span:nth-of-type(2) {
+        font-size: 28px;
+    }
+    header .header-main .logo-college .logo .inside {
+        width: 125px;
+        height: 125px;
+    }
+    header .header-main .logo-college .logo {
+        width: 135px;
+        height: 135px;
+    }
+    header .header .header-main .info img {
+        display: none;
+    }
+    footer .footer .rightWay {
+        display: block;
+        height: 60px;
+        margin-top: 20px;
+    }
+    .web .text-info-b>span, .h span {
+        font-size: 28px;
+    }
+    .menu-btn {
+        display: block;
+    }
+    header nav .nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header .header-main {
+        padding: 15px 0;
+    }
+    header .header-main .logo-college {
+        position: relative;
+        border-bottom: 1px solid rgba(111, 111, 111, 0.2);
+        padding-bottom: 15px;
+    }
+    header .header-main .logo-college .logo {
+        position: absolute;
+        right: 0;
+    }
+    header .header-main .logo-college .text {
+        position: relative;
+    }
+    header .logo-college .text .college span:nth-of-type(1), footer .college span:nth-of-type(1),
+    header .logo-college .text .college .all span:nth-of-type(1),
+    header .logo-college .text .college .all span:nth-of-type(3) {
+        font-size: 16px;
+    }
+    header .logo-college .text .college span:nth-of-type(2), footer .college span:nth-of-type(2) {
+        font-size: 20px;
+    }
+    header .header-main .dop {
+        font-size: 18px;
+    }
+    .web .text {
+        flex-wrap: wrap;
+    }
+    .web .text .img {
+        width: 100%;
+        height: 250px;
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+    .web .text .img img {
+        width: 100%;
+        height: auto;
+    }
+    .web .dop .btn-m {
+        max-width: 70%;
+    }
+    section.white .about-course .info-block,
+    section.gray .about-course .info-block {
+        justify-content: center;
+    }
+    section.white .about-course .info-block .block, section.gray .about-course .info-block .block,
+    section.white .certificate .info-block .block {
+        width: 80%;
+    }
+    section.white .reviews .info-block,
+    section.gray .questions .info-block {
+        justify-content: center;
+    }
+    section.white .reviews .info-block .block,
+    section.gray .questions .info-block .block {
+        padding: 20px;
+        width: 80%;
+    }
+}
 
