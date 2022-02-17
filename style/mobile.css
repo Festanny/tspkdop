@@ -275,7 +275,9 @@
     .about-course .info-block .block .info,
     .howstudy .info-block .block .info .text span,
     .questions .info-block .block .text,
-    .info .info-block .block span:nth-of-type(2) {
+    .info .info-block .block span:nth-of-type(2),
+    .about .info-block .block span:nth-of-type(2),
+    .reviews .info-block .block .text {
         font-size: 15px;
     }
     .h span {
@@ -364,7 +366,11 @@
         margin-bottom: 20px;
     }
     header .logo-college .text .college .all span:nth-of-type(3) {
-        display: none;
+        width: 100%;
+        transform: translateY(-3px);
+    }
+    header .logo-college .text .college .all {
+        flex-wrap: wrap;
     }
     header .logo-college .text .college .all span:nth-of-type(2) {
         margin-right: 0;
@@ -501,7 +507,62 @@
     .modal .modal-dialog .modal-content .desc .college span:nth-of-type(2), .modal .modal-dialog .modal-content .desc .college span:nth-of-type(3) {
         font-size: 26px;
     }
+    .web .dop {
+        padding-right: 64px;
+    }
+    .web .dop .btn-m {
+        margin: 26px auto 0;
+        max-width: 60%;
+    }
 }
 
+@media screen and (max-width: 800px) {
+    .h span {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container,
+    header .header .container {
+        width: 95%;
+    }
+    .web .text-info-b .text-dop {
+        margin-top: 25px;
+    }
+    section.white .info-block .block, section.gray .info-block .block {
+        width: 30%;
+    }
+    .info .info-block .block:nth-of-type(2)::before, .info .info-block .block:nth-of-type(3)::before {
+        left: -10%;
+    }
+    .web .text .img {
+        margin-right: 25px;
+    }
+    header .logo-college .text .college .all span:nth-of-type(2) {
+        order: 1;
+        width: 100%;
+    }
+    header .logo-college .text .college .all span:nth-of-type(1) {
+        order: 2;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+    header .logo-college .text .college .all span:nth-of-type(3) {
+        order: 3;
+        width: auto;
+        transform: none;
+        margin-top: 10px;
+    }
+    header .header-main .dop {
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .info .info-block .block:nth-of-type(2)::before, .info .info-block .block:nth-of-type(3)::before {
+        display: none;
+    }
+}
 
 
