@@ -729,6 +729,13 @@
     header nav .nav {
         display: none;
     }
+    footer nav .menu {
+        display: none;
+    }
+    .howstudy .info-block .block::before {
+        top: 60px!important;
+        left: 10%!important;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -790,6 +797,78 @@
     section.gray .questions .info-block .block {
         padding: 20px;
         width: 80%;
+    }
+    footer .college .all {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    footer .college .all span:nth-of-type(1) {
+        order: 2;
+        margin-right: 0;
+        margin-top: 5px;
+        padding: 3px 10px;
+    }
+    footer .college .all span:nth-of-type(2) {
+        order: 1;
+    }
+    header .header-main .logo-college .logo {
+        margin-right: 0;
+    }
+    .howstudy .info-block .block::before {
+        font-size: 100px;
+    }
+    .howstudy .info-block .block .info .text .text-weight {
+        width: 70%;
+    }
+    .howstudy .info-block .block .info .text .text-weight::before,
+    .howstudy .info-block .block:nth-of-type(2n) .info .text .text-weight::before {
+        top: 50px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    header .header-main .logo-college .logo .inside {
+        width: 115px;
+        height: 115px;
+    }
+    header .header-main .logo-college .logo {
+        width: 125px;
+        height: 125px;
+        opacity: .3;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .howstudy .info-block .block .info .text .text-weight {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .web .dop .btn-m {
+        max-width: 100%;
+    }
+    section.white .info-block, section.gray .info-block {
+        justify-content: center;
+    }
+    section.white .info-block .block, section.gray .info-block .block, section.white .about-course .info-block .block, section.gray .about-course .info-block .block, section.white .certificate .info-block .block,
+    section.white .reviews .info-block .block, section.gray .questions .info-block .block {
+        width: 100%;
+    }
+    section.gray .howstudy .info-block .block {
+        width: 100%;
+    }
+    .howstudy .info-block .block::before {
+        font-size: 150px;
+        top: 30px!important;
+        left: 20%!important;
+    }
+    section.white .reviews .info-block .block,
+    section.gray .questions .info-block .block {
+        margin-bottom: 15px;
+    }
+    section.white, section.gray {
+        padding: 50px 0;
     }
 }
 
