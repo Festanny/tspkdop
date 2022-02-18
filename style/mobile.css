@@ -824,6 +824,9 @@
     .howstudy .info-block .block:nth-of-type(2n) .info .text .text-weight::before {
         top: 50px;
     }
+    .rates .info-block .block .info .description div span {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 430px) {
@@ -870,5 +873,69 @@
     section.white, section.gray {
         padding: 50px 0;
     }
+    .web .text .img {
+        height: 210px;
+    }
+    .howstudy .info-block .block .info .text .text-weight::before, .howstudy .info-block .block:nth-of-type(2n) .info .text .text-weight::before {
+        top: 30px;
+    }
 }
 
+@media screen and (max-width: 348px) {
+    .web .dop {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    section.white .info-block, section.gray .info-block {
+        margin-top: 60px;
+    }
+    .info .info-block .block img {
+        height: 120px;
+    }
+    .info .info-block .block span:nth-of-type(1),
+    .about .info-block .block span:nth-of-type(1) {
+        margin-top: 20px;
+    }
+    .web .text-info-b>span, .h span {
+        font-size: 27px;
+    }
+    .web .text-info-b .text-dop, .web .dop div, .about-course .info-block .block .info, .howstudy .info-block .block .info .text span, .questions .info-block .block .text, .info .info-block .block span:nth-of-type(2), .about .info-block .block span:nth-of-type(2), .reviews .info-block .block .text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    header .header-main .logo-college .logo .inside {
+        width: 105px;
+        height: 105px;
+    }
+    header .header-main .logo-college .logo {
+        width: 115px;
+        height: 115px;
+    }
+    .web .text .img {
+        height: 190px;
+    }
+    .web .text-info-b>span, .h span {
+        font-size: 26px;
+    }
+    .web .text-info-b .hashtag span {
+        padding: 3px 7px;
+    }
+    .slick-dots {
+        bottom: -50px;
+    }
+    .slick-dots li button:before {
+        width: 20px;
+    }
+    .slick-dots li {
+        margin: 0 7px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .howstudy .info-block .block::before {
+        font-size: 130px;
+        left: 12%!important;
+    }
+}
